@@ -171,7 +171,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App_Config\Include\WSFederation.Pipeline.UserResolver.config" />
-    <Content Include="packages.config" />
     <Content Include="sitecore modules\shell\federation\login.aspx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -205,6 +204,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\multi.pubxml" />
     <None Include="Properties\PublishProfiles\owin.local.pubxml" />
     <Content Include="Views\layouts\_Layout.cshtml" />
