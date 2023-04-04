@@ -39,6 +39,9 @@ jobs:
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
 
     steps:
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+
     - name: Checkout repository
       uses: actions/checkout@v3
 
