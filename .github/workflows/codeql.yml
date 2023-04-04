@@ -73,6 +73,10 @@ jobs:
     #     echo "Run, Build Application using script"
     #     ./location_of_script_within_repo/buildscript.sh
 
+    - name: Restore Packages
+      run: |
+        nuget restore SitecoreOwinFederator.sln
+
     - name: Build Solution
       run: |
         msbuild.exe SitecoreOwinFederator.sln /nologo /p:platform="Any CPU" /p:Configuration="Release"
